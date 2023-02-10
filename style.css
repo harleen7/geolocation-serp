@@ -1,0 +1,83 @@
+  div {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+   .fieldName {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+   }
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #uule {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+    @media (max-width: 991px) {
+      input[type="text"] {
+        width: 250px;
+      }
+
+      datalist {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      input[type="text"] {
+        width: 200px;
+      }
+
+      datalist {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      input[type="text"] {
+        width: 150px;
+      }
+
+      datalist {
+        width: 150px;
+      }
+    }

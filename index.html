@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Geolocation Search Generator - Perform Google search from any location - Free</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="myscripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perform Google search from any location in the world with this URL generator.">
+    <meta name="author" content="Harleen Sandhu">
+  </head>
+
+  <body>
+
+    <div>
+      <h1>Geolocation Search URLs Generator</h1>
+      <p class="fieldName">Enter query</p>
+      <input type="text" id="query" value="cute kittens">
+      <p class="fieldName">Enter city</p>
+      <input type="text" id="location" value="San Francisco">
+      <form> <p>
+          <label class="fieldName">Select country</label></p>
+          <input type="text" id="country" placeholder="United States" list="countries">
+          <datalist class="fieldName" id="countries">
+               <option class="fieldName" value="United States"></option>
+               <option class="fieldName" value="Australia"></option>
+               <option class="fieldName" value="United Kingdom"></option>
+               <option class="fieldName" value="India"></option>
+          </datalist>
+    
+      </form>
+      <button type="button" onclick="generateUule()">Search in new tab</button>
+   
+      <p id="uule" style="display: none;"></p>
+    </div> 
+
+</body>
+</html>
