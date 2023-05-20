@@ -1,10 +1,20 @@
-.css-19i8ga6 h2 {
-    width: 100%;
-    background-color: #2c3e50;
-    color: white;
-    text-align: left;
-    padding: 20px 0;
+/* Navigation Bar */
+.nav {
+  overflow: hidden;
+  background-color: #333;
 }
+
+/* Navigation Bar Links */
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
 div {
     text-align: center;
     margin: auto;
