@@ -1,100 +1,173 @@
-/* Navigation Bar */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111418;
+  color: white;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
 .nav {
-  overflow: hidden;
-  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111418;
+  border-bottom: 2px solid hsla(256, 91%, 59%, 1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Navigation Bar Links */
+.nav .logo {
+    color: var(--color-darker);
+    font: var(--font-weight-bold) 1.2945382732rem var(--font-logo);
+    font-variation-settings: "wght" 700;
+    letter-spacing: var(--headings-letter-spacing);
+    text-transform: uppercase;
+}
+
 .nav a {
-  float: left;
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: hsla(256, 91%, 59%, 1);
+}
+
+/* location container */
 
 div {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    padding: 50px;
-    background-color: #f2f2f2;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #1a1a1a; /* Slightly lighter black */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #444; /* Neutral border */
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  color: hsla(256, 91%, 59%, 1); /* Accent color for heading */
+  margin-bottom: 20px;
+}
+
+/* Field Labels */
+.fieldName {
+  font-size: 18px;
+  color: white;
+  margin: 10px 0;
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 500px; /* Restricts width on larger screens */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #555; /* Neutral input border */
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: white;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Field Focus State */
+input[type="text"]:focus {
+  border-color: #777; /* Subtle focus border */
+  box-shadow: none; /* Removed accent color shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  div {
+    padding: 15px;
   }
+
   h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  input[type="text"] {
-    padding: 10px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    width: 60%;
-  }
-   .fieldName {
-    padding: 10px;
-    font-size: 20px;
-    color: black;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-   }
-  button {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  #uule {
     font-size: 24px;
-    margin-top: 20px;
   }
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .fieldName {
+    font-size: 16px;
+  }
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+@media (max-width: 480px) {
+  div {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .fieldName {
+    font-size: 14px;
+  }
 }
-    @media (max-width: 991px) {
-      input[type="text"] {
-        width: 250px;
-      }
 
-      datalist {
-        width: 250px;
-      }
-    }
+/* Button Styling */
+button {
+  background-color: hsla(256, 91%, 59%, 1); /* Accent color */
+  color: white; /* Text color */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 
-    @media (max-width: 767px) {
-      input[type="text"] {
-        width: 200px;
-      }
+/* Button Hover State */
+button:hover {
+  background-color: hsla(256, 91%, 69%, 1); /* Slightly lighter accent */
+}
 
-      datalist {
-        width: 200px;
-      }
-    }
+/* Button Active State */
+button:active {
+  background-color: hsla(256, 91%, 50%, 1); /* Darker accent */
+}
 
-    @media (max-width: 575px) {
-      input[type="text"] {
-        width: 150px;
-      }
-
-      datalist {
-        width: 150px;
-      }
-    }
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  button {
+    font-size: 16px; /* Slightly smaller text for small screens */
+    padding: 8px 16px;
+  }
+}
