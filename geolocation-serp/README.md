@@ -1,5 +1,5 @@
 
-## Geolocation based Google SERP generator
+## Geolocation based Google SERP generator - Free UULE Generator
 
 A simple script that generates UULE parameter for Google Search and appends it at the end of your search query URL.
 
